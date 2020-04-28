@@ -1,4 +1,3 @@
-<script>
         const populateTestData = () => {
             //const inputs = document.querySelectorAll('input.fsField input[type=text].fsField');
             const inputs = document.querySelectorAll('input[type=text].fsField');
@@ -74,4 +73,3 @@
 
         };
         addEventListener('load',populateTestData);
-</script>
