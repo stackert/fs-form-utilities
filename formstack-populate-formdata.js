@@ -75,4 +75,7 @@
 
         };
         addEventListener('load',populateTestData);
+        const oneOf = (items) => {
+              return items[parseInt(Math.random() * items.length )]; 
+        }
 </script>
