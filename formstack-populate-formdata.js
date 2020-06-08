@@ -16,16 +16,20 @@
             const ccNums = document.querySelectorAll('.fsCreditcardNumberField-input');
             const ccExps = document.querySelectorAll('.fsCreditcardExpirationDateField-input');
             const ccCvv2s = document.querySelectorAll('.fsCreditcardSecurityCodeField-input');
+            const addrs  = document.querySelectorAll('.fsFieldAddress');
+            const addr2s  = document.querySelectorAll('.fsFieldAddress2');
+            const cities  = document.querySelectorAll('.fsFieldCity');
+            const zips  = document.querySelectorAll('.fsFieldZip');
 
             ccNums.forEach(ccField => {
-              ccField.value = '4111111111111111'
+              ccField.value = '371449635398431'
             });
 
             ccExps.forEach(exp=>{
               exp.value = '0425';
             }) 
             ccCvv2s.forEach(cvv2=>{
-              cvv2.value = '123';
+              cvv2.value = '3412';
             }) 
  
             inputs.forEach(input=>{
@@ -46,7 +50,19 @@
             textareas.forEach(textArea=>{
                 textArea.value = 'Large Answer field can support big text and multiple lines';
             })
-
+            // special cases
+            addrs.forEach( addr => {
+                addr.value = '123 Walt Disney Way';
+            })
+            addr2s.forEach( addr2 => {
+                addr2.value = 'Micky Mouse Hut #2';
+            })
+            cities.forEach( city => {
+                city.value = 'Disney World';
+            })
+            zips.forEach( zip => {
+                zip.value = '04240';
+            })
 
             
             groups.forEach(group=>{
