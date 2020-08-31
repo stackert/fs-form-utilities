@@ -33,7 +33,7 @@
             }) 
  
             inputs.forEach(input=>{
-                input.labels.forEach(l=> {input.value += l.innerHTML.split('<span')[0].trim() }); 
+                input.labels.forEach(l=> {input.value = l.innerHTML.split('<span')[0].trim() +' ' + parseInt(Math.random() * 1000) }); 
             })
             numbers.forEach(input=>{
                 input.value = parseInt( Math.random() * 10);
