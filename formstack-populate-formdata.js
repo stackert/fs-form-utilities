@@ -33,35 +33,37 @@
             }) 
  
             inputs.forEach(input=>{
-                input.labels.forEach(l=> {input.value = l.innerHTML.split('<span')[0].trim() +' ' + parseInt(Math.random() * 1000) }); 
+                input.labels.forEach( (l) => {
+                  input.value = input.value || l.innerHTML.split('<span')[0].trim() +' ' + parseInt(Math.random() * 1000) 
+                }); 
             })
             numbers.forEach(input=>{
-                input.value = parseInt( Math.random() * 10);
+                input.value = input.value || parseInt( Math.random() * 10);
             })
             emails.forEach(email=>{
-                email.value = 't.chambers@formstack.com';
+                email.value =email.value ||  't.chambers@formstack.com';
             })
             phones.forEach(phone=>{
-                phone.value = '3235551212';
+                phone.value = phone.value ||  '3235551212';
             })
             selects.forEach(input=>{
                 oneOf(input.options).selected = true;
             });
             textareas.forEach(textArea=>{
-                textArea.value = 'Large Answer field can support big text and multiple lines';
+                textArea.value =textArea.value ||  parseInt(Math.random() * 1000)  + ' Large Answer field can support big text and multiple lines';
             })
             // special cases
             addrs.forEach( addr => {
-                addr.value = '123 Walt Disney Way';
+                addr.value = addr.value || '123 Walt Disney Way';
             })
             addr2s.forEach( addr2 => {
-                addr2.value = 'Micky Mouse Hut #2';
+                addr2.value = addr2.value|| 'Micky Mouse Hut #2';
             })
             cities.forEach( city => {
-                city.value = 'Disney World';
+                city.value = city.value|| 'Disney World';
             })
             zips.forEach( zip => {
-                zip.value = '04240';
+                zip.value = zip.value|| '04240';
             })
 
             
