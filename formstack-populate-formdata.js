@@ -54,16 +54,16 @@
             })
             // special cases
             addrs.forEach( addr => {
-                addr.value = addr.value || '123 Walt Disney Way';
+                addr.value = '123 Walt Disney Way ' +  parseInt( Math.random() * 10);
             })
             addr2s.forEach( addr2 => {
-                addr2.value = addr2.value|| 'Micky Mouse Hut #2';
+                addr2.value =  'Micky Mouse Hut #2, ' +  parseInt( Math.random() * 10);
             })
             cities.forEach( city => {
-                city.value = city.value|| 'Disney World';
+                city.value = 'Disney World ' +  parseInt( Math.random() * 10);
             })
             zips.forEach( zip => {
-                zip.value = zip.value|| '04240';
+                zip.value =  '04240';
             })
 
             
